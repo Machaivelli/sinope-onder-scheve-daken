@@ -1,0 +1,136 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "family-door",
+      "file": "family-door.png",
+      "x": 134,
+      "y": 45,
+      "depth": 120
+    },
+    {
+      "id": "left-porch",
+      "file": "left-porch.png",
+      "x": 41,
+      "y": 76,
+      "depth": 132
+    },
+    {
+      "id": "copper-fish-fountain",
+      "file": "copper-fish-fountain.png",
+      "x": 270,
+      "y": 210,
+      "depth": 273
+    },
+    {
+      "id": "balcony-building",
+      "file": "balcony-building.png",
+      "x": 416,
+      "y": 129,
+      "depth": 180
+    },
+    {
+      "id": "balcony-deck",
+      "file": "balcony-deck.png",
+      "x": 417,
+      "y": 112,
+      "depth": 600
+    },
+    {
+      "id": "balcony-stairs",
+      "file": "balcony-stairs.png",
+      "x": 397,
+      "y": 159,
+      "depth": 203
+    },
+    {
+      "id": "balcony-rail",
+      "file": "balcony-rail.png",
+      "x": 424,
+      "y": 78,
+      "depth": 1118
+    },
+    {
+      "id": "dinner-bell",
+      "file": "dinner-bell.png",
+      "x": 357,
+      "y": 154,
+      "depth": 205
+    },
+    {
+      "id": "fig-tree",
+      "file": "fig-tree.png",
+      "x": 589,
+      "y": 128,
+      "depth": 289
+    },
+    {
+      "id": "market-arch-north",
+      "file": "market-arch-north.png",
+      "x": 607,
+      "y": 228,
+      "depth": 293
+    },
+    {
+      "id": "market-arch-south",
+      "file": "market-arch-south.png",
+      "x": 598,
+      "y": 353,
+      "depth": 390
+    },
+    {
+      "id": "roof-vane-post",
+      "file": "roof-vane-post.png",
+      "x": 369,
+      "y": 53,
+      "depth": 99
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 376,
+      "y": 53,
+      "kind": "vane",
+      "color": "#E8B64E"
+    },
+    {
+      "x": 375,
+      "y": 156,
+      "kind": "flag",
+      "color": "#785677"
+    },
+    {
+      "x": 507,
+      "y": 71,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    }
+  ],
+  "water": [
+    {
+      "x": 278,
+      "y": 247,
+      "width": 42,
+      "height": 12
+    }
+  ]
+}

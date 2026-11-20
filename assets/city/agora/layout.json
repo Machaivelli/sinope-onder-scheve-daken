@@ -1,0 +1,115 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "exit-jamb-0",
+      "file": "exit-jamb-0.png",
+      "x": 0,
+      "y": 157,
+      "depth": 222
+    },
+    {
+      "id": "exit-jamb-1",
+      "file": "exit-jamb-1.png",
+      "x": 0,
+      "y": 293,
+      "depth": 359
+    },
+    {
+      "id": "exit-jamb-2",
+      "file": "exit-jamb-2.png",
+      "x": 622,
+      "y": 283,
+      "depth": 349
+    },
+    {
+      "id": "hollow-copper-lion",
+      "file": "hollow-copper-lion.png",
+      "x": 278,
+      "y": 118,
+      "depth": 236
+    },
+    {
+      "id": "traders-open-loggia",
+      "file": "traders-open-loggia.png",
+      "x": 451,
+      "y": 131,
+      "depth": 174
+    },
+    {
+      "id": "loggia-roof-deck",
+      "file": "loggia-roof-deck.png",
+      "x": 454,
+      "y": 115,
+      "depth": 600
+    },
+    {
+      "id": "loggia-roof-steps",
+      "file": "loggia-roof-steps.png",
+      "x": 428,
+      "y": 152,
+      "depth": 199
+    },
+    {
+      "id": "loggia-roof-rail",
+      "file": "loggia-roof-rail.png",
+      "x": 457,
+      "y": 105,
+      "depth": 1118
+    },
+    {
+      "id": "old-stone-bench",
+      "file": "old-stone-bench.png",
+      "x": 112,
+      "y": 276,
+      "depth": 299
+    },
+    {
+      "id": "festival-awnings",
+      "file": "festival-awnings.png",
+      "x": 63,
+      "y": 71,
+      "depth": 109
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 205,
+      "y": 86,
+      "kind": "flag",
+      "color": "#E8B64E"
+    },
+    {
+      "x": 322,
+      "y": 78,
+      "kind": "cloth",
+      "color": "#785677"
+    },
+    {
+      "x": 391,
+      "y": 98,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    }
+  ],
+  "water": []
+}

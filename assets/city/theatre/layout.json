@@ -1,0 +1,94 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "platform-face",
+      "file": "platform-face.png",
+      "x": 215,
+      "y": 140,
+      "depth": 189
+    },
+    {
+      "id": "walkable-roof",
+      "file": "walkable-roof.png",
+      "x": 218,
+      "y": 125,
+      "depth": 600
+    },
+    {
+      "id": "two-way-roof-stairs",
+      "file": "two-way-roof-stairs.png",
+      "x": 192,
+      "y": 150,
+      "depth": 213
+    },
+    {
+      "id": "roof-back-rail",
+      "file": "roof-back-rail.png",
+      "x": 225,
+      "y": 117,
+      "depth": 132
+    },
+    {
+      "id": "stage-apron",
+      "file": "stage-apron.png",
+      "x": 218,
+      "y": 167,
+      "depth": 189
+    },
+    {
+      "id": "west-audience-bench",
+      "file": "west-audience-bench.png",
+      "x": 125,
+      "y": 254,
+      "depth": 277
+    },
+    {
+      "id": "east-audience-bench",
+      "file": "east-audience-bench.png",
+      "x": 422,
+      "y": 254,
+      "depth": 277
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 221,
+      "y": 58,
+      "kind": "cloth",
+      "color": "#785677"
+    },
+    {
+      "x": 399,
+      "y": 57,
+      "kind": "cloth",
+      "color": "#785677"
+    },
+    {
+      "x": 75,
+      "y": 55,
+      "kind": "flag",
+      "color": "#C96C52"
+    }
+  ],
+  "water": []
+}

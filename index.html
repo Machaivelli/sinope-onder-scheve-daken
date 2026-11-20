@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#263747" />
+  <meta name="description" content="Sinope — Onder scheve daken. Een eerste dag met Diogenes en Argos in een eigenzinnige stad aan zee." />
+  <title>Sinope — Onder scheve daken</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23e8b64e' d='M2 10l5-5h7l4 5-4 5H7zM1 5l5 5-5 5z'/%3E%3Cpath fill='%23263747' d='M13 8h2v2h-2z'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-BI5jyTTp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CS6QjMgF.css">
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <svg class="brand-fish" aria-hidden="true" viewBox="0 0 38 24"><path fill="currentColor" d="M3 6l8 6-8 6V6zm6 6 8-7h10l8 7-8 7H17l-8-7z"/><path fill="#263747" d="M26 9h3v3h-3z"/></svg>
+      <div class="wordmark"><b>SINOPE</b><small>onder scheve daken</small></div>
+      <span id="place-name"></span>
+      <nav class="utilities" aria-label="Spelmenu">
+        <button id="city-map-button" aria-label="Stadskaart openen" title="Stadskaart (M)">Kaart</button>
+        <button id="sound" aria-label="Geluid uitschakelen" aria-pressed="true" title="Geluid">♪</button>
+        <button id="sight" type="button" aria-label="Alleen beeld" aria-pressed="false" hidden></button>
+        <button id="help" aria-label="Bediening tonen" title="Bediening (?)">?</button>
+        <button id="restart" aria-label="Opnieuw beginnen" title="Nieuwe eerste dag" disabled>↺</button>
+        <button id="pause" aria-label="Pauzeren" title="Pauzeren (Esc)" disabled>Ⅱ</button>
+      </nav>
+    </header>
+    <section class="game-shell" aria-label="Sinope">
+      <div id="goal" aria-live="polite"></div>
+      <div id="playfield" tabindex="0" role="application" aria-label="Speelveld. WASD of pijlen om te lopen. E om iets dichtbij te gebruiken of te klimmen. Klik om Argos te sturen, Q om hem te roepen, C om te zitten.">
+        <div id="game"></div>
+        <div id="dawn-cover" hidden></div>
+        <div id="loading" role="status">De stad wordt wakker…</div>
+        <div id="place-ribbon" aria-hidden="true"><span class="day-label">DE EERSTE DAG</span><span class="map-title"></span></div>
+        <div id="context-hint" hidden></div>
+        <div id="room-hud" hidden><header><small>ACHTER DE DREMPEL</small><strong id="room-name"></strong></header><button type="button" id="room-leave" aria-label="Terug naar de straat">Naar buiten ↗</button><div class="room-bottom"><p id="room-line" role="status"></p><button type="button" id="room-action" hidden></button></div></div>
+        <section id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-copy" hidden>
+          <div class="invitation">
+            <svg class="cover-emblem" aria-hidden="true" viewBox="0 0 240 52"><path fill="#785677" d="M7 39 35 17l37 6 13-12 30 15 36-20 37 19 27-8 20 22H7z"/><path fill="#C96C52" d="m8 41 29-17 34 6 17-12 26 16 39-18 33 16 31-8 17 17H8z"/><path fill="#e8b64e" d="M152 3h3v23h-3zM150 7l-9-5v10l9-5zm-1 0 8-5h12l9 5-9 5h-12l-8-5z"/><path fill="#263747" d="M167 5h3v2h-3z"/></svg>
+            <div id="overlay-kicker" class="eyebrow">DIOGENES & ARGOS</div>
+            <h1 id="overlay-title">Sinope<span>onder scheve daken</span></h1>
+            <p id="overlay-copy">Een vertrouwde stad.<br> Een hond met plannen.<br> En jij, die alleen even zou kijken.</p>
+            <div id="intro-controls" class="intro-controls"></div>
+            <div id="shore-intro-seals" role="img" aria-label="Loop met de pijlen naar een plek, gebruik dichtbij de hand of E, en stuur Argos met de poot of F."></div>
+            <div class="overlay-buttons">
+              <button id="begin" class="primary" disabled>Een ogenblik…</button>
+              <button id="opening-sight" type="button" aria-pressed="false" hidden></button>
+              <button id="reset-confirm" class="primary restart-confirm" hidden>Begin opnieuw</button>
+            </div>
+            <nav id="pause-tools" class="utilities" aria-label="Geluid, uitleg en speelronde" hidden></nav>
+            <a id="chapter-link" class="chapter-link" href="?chapter=athens" hidden>Speel Athene</a>
+            <a id="opening-link" class="chapter-link" href="?chapter=sinope&amp;slot=spoor" hidden>Speel op Argos’ spoor in een aparte speelronde</a>
+            <small id="save-note">Je eerste dag wordt vanzelf bewaard.</small>
+          </div>
+        </section>
+      </div>
+      <div class="street-air"><p id="street-caption" role="status" aria-live="polite" aria-atomic="true" hidden></p></div>
+      <div class="touch-controls" aria-label="Aanraakbediening">
+        <div class="dpad" role="group" aria-label="Lopen">
+          <button data-move="up" aria-label="Omhoog lopen">↑</button>
+          <button data-move="left" aria-label="Naar links lopen">←</button>
+          <button data-move="down" aria-label="Omlaag lopen">↓</button>
+          <button data-move="right" aria-label="Naar rechts lopen">→</button>
+        </div>
+        <div class="touch-actions">
+          <button id="act-touch" aria-label="Gebruik iets dichtbij">Doen</button>
+          <button id="dog-touch" aria-label="Roep Argos terug">Hier!</button>
+          <button id="sit-touch" aria-label="Gaan zitten of opstaan">Zitten</button>
+        </div>
+      </div>
+    </section>
+    <footer id="controls"><span><kbd>WASD</kbd> lopen / duwen</span><span><kbd>E</kbd> doen / spelen</span><span>klik → Argos</span><span><kbd>Q</kbd> hier!</span><span><kbd>M</kbd> stadskaart</span><span><kbd>C</kbd> zitten</span><span id="save-indicator" aria-live="polite"></span></footer>
+    <span id="live-reaction" class="sr-only" aria-live="polite" aria-atomic="true"></span>
+  </main>
+</body>
+</html>

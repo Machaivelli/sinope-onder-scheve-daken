@@ -1,0 +1,122 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "exit-jamb-0",
+      "file": "exit-jamb-0.png",
+      "x": 0,
+      "y": 275,
+      "depth": 342
+    },
+    {
+      "id": "exit-jamb-1",
+      "file": "exit-jamb-1.png",
+      "x": 622,
+      "y": 278,
+      "depth": 346
+    },
+    {
+      "id": "deep-fish-cistern",
+      "file": "deep-fish-cistern.png",
+      "x": 244,
+      "y": 164,
+      "depth": 260
+    },
+    {
+      "id": "overflow-trough",
+      "file": "overflow-trough.png",
+      "x": 270,
+      "y": 128,
+      "depth": 157
+    },
+    {
+      "id": "always-wet-bench",
+      "file": "always-wet-bench.png",
+      "x": 100,
+      "y": 275,
+      "depth": 304
+    },
+    {
+      "id": "cistern-pump-house",
+      "file": "cistern-pump-house.png",
+      "x": 455,
+      "y": 110,
+      "depth": 164
+    },
+    {
+      "id": "pump-terrace-deck",
+      "file": "pump-terrace-deck.png",
+      "x": 458,
+      "y": 112,
+      "depth": 600
+    },
+    {
+      "id": "pump-terrace-steps",
+      "file": "pump-terrace-steps.png",
+      "x": 430,
+      "y": 144,
+      "depth": 200
+    },
+    {
+      "id": "pump-terrace-rail",
+      "file": "pump-terrace-rail.png",
+      "x": 461,
+      "y": 102,
+      "depth": 1118
+    },
+    {
+      "id": "water-carriers-eaves",
+      "file": "water-carriers-eaves.png",
+      "x": 63,
+      "y": 76,
+      "depth": 109
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 96,
+      "y": 100,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 376,
+      "y": 53,
+      "kind": "flag",
+      "color": "#785677"
+    }
+  ],
+  "water": [
+    {
+      "x": 263,
+      "y": 181,
+      "width": 119,
+      "height": 62
+    },
+    {
+      "x": 280,
+      "y": 134,
+      "width": 96,
+      "height": 9
+    }
+  ]
+}

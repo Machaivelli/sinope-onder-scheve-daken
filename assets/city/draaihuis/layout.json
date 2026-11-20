@@ -1,0 +1,8 @@
+{
+  "width":512,"height":320,"background":"background.png",
+  "layers":[
+    {"id":"kleurenbank","file":"kleurenbank.png","x":79,"y":96,"depth":172},
+    {"id":"valse-gezichten","file":"valse-gezichten.png","x":392,"y":168,"depth":246}
+  ],
+  "props":{},"wind":[],"water":[]
+}

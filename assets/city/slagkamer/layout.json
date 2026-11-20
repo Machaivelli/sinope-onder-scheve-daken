@@ -1,0 +1,45 @@
+{
+  "width": 512,
+  "height": 320,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "drying-rack",
+      "file": "drying-rack.png",
+      "x": 56,
+      "y": 67,
+      "depth": 135
+    },
+    {
+      "id": "clay-vat",
+      "file": "clay-vat.png",
+      "x": 73,
+      "y": 137,
+      "depth": 190
+    },
+    {
+      "id": "fish-press",
+      "file": "fish-press.png",
+      "x": 214,
+      "y": 82,
+      "depth": 194
+    },
+    {
+      "id": "foot-bellows",
+      "file": "foot-bellows.png",
+      "x": 383,
+      "y": 103,
+      "depth": 140
+    },
+    {
+      "id": "dry-trough",
+      "file": "dry-trough.png",
+      "x": 390,
+      "y": 189,
+      "depth": 226
+    }
+  ],
+  "props": {},
+  "wind": [],
+  "water": []
+}

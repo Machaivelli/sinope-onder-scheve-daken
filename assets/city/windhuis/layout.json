@@ -1,0 +1,24 @@
+{
+  "width": 512,
+  "height": 320,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "patroontafel",
+      "file": "patroontafel.png",
+      "x": 183,
+      "y": 131,
+      "depth": 187
+    },
+    {
+      "id": "twee-verfbaden",
+      "file": "twee-verfbaden.png",
+      "x": 328,
+      "y": 141,
+      "depth": 192
+    }
+  ],
+  "props": {},
+  "wind": [],
+  "water": []
+}

@@ -1,0 +1,31 @@
+{
+  "width": 512,
+  "height": 320,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "kneedbank",
+      "file": "kneedbank.png",
+      "x": 101,
+      "y": 116,
+      "depth": 169
+    },
+    {
+      "id": "rode-koepel",
+      "file": "rode-koepel.png",
+      "x": 298,
+      "y": 27,
+      "depth": 166
+    },
+    {
+      "id": "afkoelrek",
+      "file": "afkoelrek.png",
+      "x": 414,
+      "y": 260,
+      "depth": 322
+    }
+  ],
+  "props": {},
+  "wind": [],
+  "water": []
+}

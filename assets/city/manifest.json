@@ -1,0 +1,92 @@
+{
+  "maps": [
+    {
+      "id": "home",
+      "layout": "home/layout.json"
+    },
+    {
+      "id": "market",
+      "layout": "market/layout.json"
+    },
+    {
+      "id": "quay",
+      "layout": "quay/layout.json"
+    },
+    {
+      "id": "garden",
+      "layout": "garden/layout.json"
+    },
+    {
+      "id": "school",
+      "layout": "school/layout.json"
+    },
+    {
+      "id": "agora",
+      "layout": "agora/layout.json"
+    },
+    {
+      "id": "workshop",
+      "layout": "workshop/layout.json"
+    },
+    {
+      "id": "cistern",
+      "layout": "cistern/layout.json"
+    },
+    {
+      "id": "harbor",
+      "layout": "harbor/layout.json"
+    },
+    {
+      "id": "theatre",
+      "layout": "theatre/layout.json"
+    },
+    {
+      "id": "hill",
+      "layout": "hill/layout.json"
+    },
+    {
+      "id": "wall",
+      "layout": "wall/layout.json"
+    },
+    {
+      "id": "bedroom",
+      "layout": "bedroom/layout.json"
+    },
+    {
+      "id": "house",
+      "layout": "house/layout.json"
+    },
+    {
+      "id": "slagkamer",
+      "layout": "slagkamer/layout.json"
+    },
+    {
+      "id":"windhuis",
+      "layout":"windhuis/layout.json"
+    },
+    {
+      "id":"broodoven",
+      "layout":"broodoven/layout.json"
+    },
+    {
+      "id":"draaihuis",
+      "layout":"draaihuis/layout.json"
+    },
+    {
+      "id":"wankamer",
+      "layout":"wankamer/layout.json"
+    },
+    {
+      "id":"zilverhuis",
+      "layout":"zilverhuis/layout.json"
+    },
+    {
+      "id":"tijsteiger",
+      "layout":"tijsteiger/layout.json"
+    },
+    {
+      "id": "athens-city",
+      "layout": "athens-city/layout.json"
+    }
+  ]
+}

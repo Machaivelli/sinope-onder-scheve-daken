@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#263747">
+  <title>Kringspel · Een plein, twee duo’s</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div><p class="eyebrow">SINOPE · SPEELPROEF</p><h1>Kringspel<span>Een plein. Twee duo’s. Eén brutale kring.</span></h1></div>
+    <nav aria-label="Andere speelproeven"><a href="../">Sinope</a><a href="../proeven/">De drie streken</a></nav>
+  </header>
+
+  <section class="game" aria-label="Kringspel">
+    <div class="scoreboard">
+      <div class="team team-us"><span class="team-label">JIJ & ARGOS</span><strong id="our-score">0</strong><span id="our-pips" class="pips" aria-hidden="true"></span></div>
+      <div class="round"><span id="round">RONDE 1</span><strong id="timer">Kies je kring</strong><span>Eerst 5 punten</span></div>
+      <div class="team team-them"><span id="their-name" class="team-label">BION & MELIA</span><strong id="their-score">0</strong><span id="their-pips" class="pips" aria-hidden="true"></span></div>
+    </div>
+    <div class="game-body">
+      <div class="field-column">
+        <div id="playfield" class="playfield" tabindex="0" role="group" aria-label="Speelveld. Palen kiezen met 1 tot en met 9. Bewegen met WASD of pijltjes, Argos sturen met een klik of een paalnummer, duwen met spatie." aria-describedby="instruction">
+          <canvas id="scene" width="640" height="400" aria-label="Sinopees plein met negen palen en drie bronzen schijven"></canvas>
+          <div id="overlay" class="overlay" hidden>
+            <div class="overlay-card" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-detail">
+              <p id="overlay-kicker" class="eyebrow">EVEN UITBLAZEN</p>
+              <h2 id="overlay-title">Argos wacht wel.</h2>
+              <p id="overlay-detail">Het plein staat stil tot jij verder speelt.</p>
+              <button id="continue" class="primary" type="button">Verder spelen</button>
+            </div>
+          </div>
+          <p id="loading" class="loading">Het plein wordt geveegd…</p>
+        </div>
+        <div class="field-footer"><span><i class="key-us"></i> Jullie knopen</span><span><i class="key-them"></i> <span id="enemy-legend">Hun planhint</span></span><span>◎ = 1 punt</span></div>
+        <div class="touch-controls" aria-label="Aanraakbesturing">
+          <div class="dpad"><button data-dir="up" aria-label="Loop omhoog">▲</button><button data-dir="left" aria-label="Loop links">◀</button><span aria-hidden="true">D</span><button data-dir="right" aria-label="Loop rechts">▶</button><button data-dir="down" aria-label="Loop omlaag">▼</button></div>
+          <p>Tik een paal voor Argos.<br>Houd een pijl vast om te lopen.</p>
+          <button id="touch-pulse" class="pulse-action">Maak<br>ruimte!</button>
+        </div>
+      </div>
+      <aside class="sideline">
+        <div id="phase-copy" aria-live="polite"><p id="phase-kicker" class="eyebrow">01 · HET PLAN</p><h2 id="phase-title">Drie palen. Jouw kring.</h2><p id="instruction">Sluit een driehoek rond de bronzen schijven. Elke schijf is één punt.</p></div>
+        <div id="planner">
+          <div id="chosen-pins" class="chosen-pins" aria-label="Gekozen palen"></div>
+          <p id="plan-value" class="plan-value"></p>
+          <p id="plan-help" class="muted">Een kring ligt al klaar. Klik drie andere palen om hem te veranderen.</p>
+          <div class="plan-tools"><button id="clear" type="button">Kies zelf</button><button id="suggest" type="button">Voorstel</button></div>
+          <p id="route-hint" class="route-hint"></p>
+          <p id="controls-reminder" class="muted">WASD = jij · klik een paal = Argos</p>
+          <button id="start" class="primary" type="button" disabled>Speel de ronde <span>→</span></button>
+        </div>
+        <div id="live-controls" hidden>
+          <p id="capture-status" class="capture-status">0 / 3 palen vast</p>
+          <div class="closing-meters"><label>Jullie kring <meter id="our-close" min="0" max="1" value="0">0</meter></label><label>Hun kring <meter id="their-close" min="0" max="1" value="0">0</meter></label></div>
+          <p id="closing-hint" class="closing-hint"></p>
+          <p id="argos-target" class="route-hint"></p>
+          <button id="pulse" class="pulse-action" type="button"><kbd>SPATIE</kbd><span id="pulse-label">Maak ruimte!</span></button>
+          <p class="muted">Diogenes én Argos duwen tegenstanders opzij. Na even wachten kun je opnieuw.</p>
+        </div>
+        <div id="round-result" hidden><strong id="result-score"></strong><p id="result-detail"></p></div>
+        <div id="match-result" hidden><button id="rematch" class="primary" type="button">Nog een potje →</button></div>
+        <p id="last-round" class="last-round" hidden></p>
+        <div class="tool-row"><button id="pause" type="button" disabled>Pauze</button><button id="sound" type="button" aria-pressed="true">♪ Geluid aan</button></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="below-field" aria-label="Spelregels en tegenstander">
+    <div class="rule-strip"><p><b>1. Kies.</b> Drie palen met schijven ertussen.</p><p><b>2. Knoop.</b> Loop naar een paal en blijf even staan. Je knoop blijft zitten.</p><p><b>3. Sluit.</b> Houd je drie palen 2 seconden in bezit. Een overgenomen paal breekt de kring. De eerste gesloten kring scoort.</p></div>
+    <div class="match-options"><label for="opponent">Volgend potje tegen</label><select id="opponent"><option value="bion">Bion & Melia · begin hier</option><option value="nera">Nera & Ione · pittig & snel</option><option value="philo">Philo & Myron · pittig & slim</option></select><button id="new-match" type="button">Nieuw potje</button></div>
+    <p class="keyboard-note"><kbd>WASD</kbd> of <kbd>↑←↓→</kbd> Diogenes · <kbd>KLIK</kbd> paal voor Argos · <kbd>SPATIE</kbd> ruimte maken · <kbd>1–9</kbd> paal kiezen · <kbd>ESC</kbd> pauze</p>
+  </section>
+  <p id="error" role="alert" hidden></p>
+</main>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

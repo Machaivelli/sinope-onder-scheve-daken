@@ -1,0 +1,116 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "exit-jamb-0",
+      "file": "exit-jamb-0.png",
+      "x": 0,
+      "y": 151,
+      "depth": 217
+    },
+    {
+      "id": "exit-jamb-1",
+      "file": "exit-jamb-1.png",
+      "x": 622,
+      "y": 154,
+      "depth": 220
+    },
+    {
+      "id": "exit-jamb-2",
+      "file": "exit-jamb-2.png",
+      "x": 622,
+      "y": 285,
+      "depth": 351
+    },
+    {
+      "id": "school-room-front",
+      "file": "school-room-front.png",
+      "x": 90,
+      "y": 133,
+      "depth": 186
+    },
+    {
+      "id": "school-terrace-deck",
+      "file": "school-terrace-deck.png",
+      "x": 93,
+      "y": 124,
+      "depth": 600
+    },
+    {
+      "id": "school-terrace-steps",
+      "file": "school-terrace-steps.png",
+      "x": 68,
+      "y": 171,
+      "depth": 209
+    },
+    {
+      "id": "school-terrace-rail",
+      "file": "school-terrace-rail.png",
+      "x": 96,
+      "y": 114,
+      "depth": 1118
+    },
+    {
+      "id": "school-owl-roofline",
+      "file": "school-owl-roofline.png",
+      "x": 141,
+      "y": 83,
+      "depth": 117
+    },
+    {
+      "id": "tilted-question-tablet",
+      "file": "tilted-question-tablet.png",
+      "x": 350,
+      "y": 176,
+      "depth": 238
+    },
+    {
+      "id": "borrowed-scrolls-rack",
+      "file": "borrowed-scrolls-rack.png",
+      "x": 470,
+      "y": 126,
+      "depth": 181
+    },
+    {
+      "id": "north-school-cloth",
+      "file": "north-school-cloth.png",
+      "x": 245,
+      "y": 69,
+      "depth": 106
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 304,
+      "y": 97,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 572,
+      "y": 57,
+      "kind": "flag",
+      "color": "#785677"
+    }
+  ],
+  "water": []
+}

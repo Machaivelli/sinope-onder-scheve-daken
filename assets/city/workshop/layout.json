@@ -1,0 +1,123 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "exit-jamb-0",
+      "file": "exit-jamb-0.png",
+      "x": 622,
+      "y": 146,
+      "depth": 213
+    },
+    {
+      "id": "exit-jamb-1",
+      "file": "exit-jamb-1.png",
+      "x": 0,
+      "y": 278,
+      "depth": 344
+    },
+    {
+      "id": "potters-round-mouth-kiln",
+      "file": "potters-round-mouth-kiln.png",
+      "x": 266,
+      "y": 139,
+      "depth": 194
+    },
+    {
+      "id": "kiln-terrace-deck",
+      "file": "kiln-terrace-deck.png",
+      "x": 269,
+      "y": 124,
+      "depth": 600
+    },
+    {
+      "id": "kiln-terrace-steps",
+      "file": "kiln-terrace-steps.png",
+      "x": 240,
+      "y": 154,
+      "depth": 216
+    },
+    {
+      "id": "kiln-terrace-rail",
+      "file": "kiln-terrace-rail.png",
+      "x": 272,
+      "y": 114,
+      "depth": 1118
+    },
+    {
+      "id": "kiln-crooked-chimney",
+      "file": "kiln-crooked-chimney.png",
+      "x": 279,
+      "y": 56,
+      "depth": 121
+    },
+    {
+      "id": "still-soft-pottery",
+      "file": "still-soft-pottery.png",
+      "x": 97,
+      "y": 149,
+      "depth": 206
+    },
+    {
+      "id": "sawhorse-and-offcuts",
+      "file": "sawhorse-and-offcuts.png",
+      "x": 420,
+      "y": 235,
+      "depth": 277
+    },
+    {
+      "id": "repaired-flower-pot",
+      "file": "repaired-flower-pot.png",
+      "x": 99,
+      "y": 285,
+      "depth": 326
+    },
+    {
+      "id": "makers-skyline-rig",
+      "file": "makers-skyline-rig.png",
+      "x": 369,
+      "y": 38,
+      "depth": 109
+    },
+    {
+      "id": "dyed-wool-eaves",
+      "file": "dyed-wool-eaves.png",
+      "x": 37,
+      "y": 73,
+      "depth": 111
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 68,
+      "y": 101,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 543,
+      "y": 102,
+      "kind": "cloth",
+      "color": "#785677"
+    }
+  ],
+  "water": []
+}

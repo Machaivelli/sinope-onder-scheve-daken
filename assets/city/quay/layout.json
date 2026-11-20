@@ -1,0 +1,164 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "copper-harbour-wheel",
+      "file": "copper-harbour-wheel.png",
+      "x": 47,
+      "y": 116,
+      "depth": 232
+    },
+    {
+      "id": "rope-shed-facade",
+      "file": "rope-shed-facade.png",
+      "x": 332,
+      "y": 143,
+      "depth": 196
+    },
+    {
+      "id": "rope-shed-roof",
+      "file": "rope-shed-roof.png",
+      "x": 329,
+      "y": 127,
+      "depth": 600
+    },
+    {
+      "id": "private-roof-ladder",
+      "file": "private-roof-ladder.png",
+      "x": 401,
+      "y": 175,
+      "depth": 213
+    },
+    {
+      "id": "mint-wall-upper",
+      "file": "mint-wall-upper.png",
+      "x": 381,
+      "y": 101,
+      "depth": 200
+    },
+    {
+      "id": "sidegate",
+      "file": "sidegate.png",
+      "x": 381,
+      "y": 235,
+      "depth": 282
+    },
+    {
+      "id": "mint-wall-lower",
+      "file": "mint-wall-lower.png",
+      "x": 381,
+      "y": 295,
+      "depth": 352
+    },
+    {
+      "id": "dog-hole-lintel",
+      "file": "dog-hole-lintel.png",
+      "x": 380,
+      "y": 271,
+      "depth": 282
+    },
+    {
+      "id": "sidegate-latch-rope",
+      "file": "sidegate-latch-rope.png",
+      "x": 395,
+      "y": 251,
+      "depth": 287
+    },
+    {
+      "id": "mint-seal-sign",
+      "file": "mint-seal-sign.png",
+      "x": 398,
+      "y": 169,
+      "depth": 200
+    },
+    {
+      "id": "copper-coin-press",
+      "file": "copper-coin-press.png",
+      "x": 513,
+      "y": 103,
+      "depth": 182
+    },
+    {
+      "id": "mint-wall-niche",
+      "file": "mint-wall-niche.png",
+      "x": 548,
+      "y": 76,
+      "depth": 117
+    },
+    {
+      "id": "market-way-north",
+      "file": "market-way-north.png",
+      "x": 0,
+      "y": 187,
+      "depth": 258
+    },
+    {
+      "id": "market-way-south",
+      "file": "market-way-south.png",
+      "x": 0,
+      "y": 324,
+      "depth": 348
+    },
+    {
+      "id": "red-sailed-fishing-boat",
+      "file": "red-sailed-fishing-boat.png",
+      "x": 217,
+      "y": 357,
+      "depth": 390
+    },
+    {
+      "id": "green-cargo-skiff",
+      "file": "green-cargo-skiff.png",
+      "x": 475,
+      "y": 366,
+      "depth": 397
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 204,
+      "y": 61,
+      "kind": "vane",
+      "color": "#E8B64E"
+    },
+    {
+      "x": 436,
+      "y": 40,
+      "kind": "flag",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 284,
+      "y": 79,
+      "kind": "cloth",
+      "color": "#785677"
+    }
+  ],
+  "water": [
+    {
+      "x": 0,
+      "y": 367,
+      "width": 640,
+      "height": 33
+    }
+  ]
+}

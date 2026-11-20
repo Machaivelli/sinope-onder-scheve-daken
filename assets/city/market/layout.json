@@ -1,0 +1,191 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "home-arch-north",
+      "file": "home-arch-north.png",
+      "x": 0,
+      "y": 209,
+      "depth": 279
+    },
+    {
+      "id": "home-arch-south",
+      "file": "home-arch-south.png",
+      "x": 0,
+      "y": 334,
+      "depth": 389
+    },
+    {
+      "id": "quay-entry-north",
+      "file": "quay-entry-north.png",
+      "x": 617,
+      "y": 209,
+      "depth": 267
+    },
+    {
+      "id": "quay-entry-south",
+      "file": "quay-entry-south.png",
+      "x": 626,
+      "y": 328,
+      "depth": 387
+    },
+    {
+      "id": "bread-awning",
+      "file": "bread-awning.png",
+      "x": 58,
+      "y": 79,
+      "depth": 120
+    },
+    {
+      "id": "bions-bent-oven",
+      "file": "bions-bent-oven.png",
+      "x": 78,
+      "y": 96,
+      "depth": 179
+    },
+    {
+      "id": "oilcloth-awning",
+      "file": "oilcloth-awning.png",
+      "x": 181,
+      "y": 71,
+      "depth": 109
+    },
+    {
+      "id": "patched-awning",
+      "file": "patched-awning.png",
+      "x": 574,
+      "y": 74,
+      "depth": 110
+    },
+    {
+      "id": "three-traders-stall",
+      "file": "three-traders-stall.png",
+      "x": 250,
+      "y": 176,
+      "depth": 212
+    },
+    {
+      "id": "three-roofs-walkway",
+      "file": "three-roofs-walkway.png",
+      "x": 250,
+      "y": 124,
+      "depth": 600
+    },
+    {
+      "id": "roof-north-rope",
+      "file": "roof-north-rope.png",
+      "x": 251,
+      "y": 112,
+      "depth": 1118
+    },
+    {
+      "id": "roof-ribbon",
+      "file": "roof-ribbon.png",
+      "x": 368,
+      "y": 150,
+      "depth": 1118
+    },
+    {
+      "id": "left-climb-knot",
+      "file": "left-climb-knot.png",
+      "x": 240,
+      "y": 174,
+      "depth": 212
+    },
+    {
+      "id": "right-drop-rope",
+      "file": "right-drop-rope.png",
+      "x": 445,
+      "y": 172,
+      "depth": 213
+    },
+    {
+      "id": "neras-fish-stall",
+      "file": "neras-fish-stall.png",
+      "x": 482,
+      "y": 111,
+      "depth": 191
+    },
+    {
+      "id": "the-flying-fish-sign",
+      "file": "the-flying-fish-sign.png",
+      "x": 509,
+      "y": 71,
+      "depth": 193
+    },
+    {
+      "id": "high-laundry",
+      "file": "high-laundry.png",
+      "x": 349,
+      "y": 66,
+      "depth": 108
+    },
+    {
+      "id": "melias-wind-banner",
+      "file": "melias-wind-banner.png",
+      "x": 340,
+      "y": 207,
+      "depth": 240
+    },
+    {
+      "id": "iones-flowerbarrow",
+      "file": "iones-flowerbarrow.png",
+      "x": 344,
+      "y": 273,
+      "depth": 317
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 442,
+      "y": 27,
+      "kind": "vane",
+      "color": "#E8B64E"
+    },
+    {
+      "x": 352,
+      "y": 218,
+      "kind": "cloth",
+      "color": "#785677"
+    },
+    {
+      "x": 190,
+      "y": 78,
+      "kind": "flag",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 604,
+      "y": 70,
+      "kind": "cloth",
+      "color": "#E8B64E"
+    }
+  ],
+  "water": [
+    {
+      "x": 276,
+      "y": 338,
+      "width": 12,
+      "height": 4
+    }
+  ]
+}

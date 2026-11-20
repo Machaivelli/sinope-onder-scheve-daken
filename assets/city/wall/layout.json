@@ -1,0 +1,87 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "platform-face",
+      "file": "platform-face.png",
+      "x": 205,
+      "y": 136,
+      "depth": 185
+    },
+    {
+      "id": "walkable-roof",
+      "file": "walkable-roof.png",
+      "x": 208,
+      "y": 112,
+      "depth": 600
+    },
+    {
+      "id": "two-way-roof-stairs",
+      "file": "two-way-roof-stairs.png",
+      "x": 183,
+      "y": 147,
+      "depth": 216
+    },
+    {
+      "id": "roof-back-rail",
+      "file": "roof-back-rail.png",
+      "x": 215,
+      "y": 104,
+      "depth": 119
+    },
+    {
+      "id": "travellers-baggage-bench",
+      "file": "travellers-baggage-bench.png",
+      "x": 102,
+      "y": 248,
+      "depth": 304
+    },
+    {
+      "id": "two-roads-sign-stone",
+      "file": "two-roads-sign-stone.png",
+      "x": 506,
+      "y": 181,
+      "depth": 270
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 194,
+      "y": 50,
+      "kind": "flag",
+      "color": "#785677"
+    },
+    {
+      "x": 461,
+      "y": 41,
+      "kind": "flag",
+      "color": "#C96C52"
+    },
+    {
+      "x": 119,
+      "y": 256,
+      "kind": "cloth",
+      "color": "#C96C52"
+    }
+  ],
+  "water": []
+}

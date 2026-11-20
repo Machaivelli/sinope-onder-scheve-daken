@@ -1,0 +1,38 @@
+{
+  "width": 512,
+  "height": 320,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "family-cupboard",
+      "file": "family-cupboard.png",
+      "x": 79,
+      "y": 63,
+      "depth": 145
+    },
+    {
+      "id": "linen-cupboard",
+      "file": "linen-cupboard.png",
+      "x": 332,
+      "y": 86,
+      "depth": 145
+    },
+    {
+      "id": "bedroom-stairs",
+      "file": "bedroom-stairs.png",
+      "x": 396,
+      "y": 44,
+      "depth": 143
+    },
+    {
+      "id": "breakfast-table",
+      "file": "breakfast-table.png",
+      "x": 180,
+      "y": 156,
+      "depth": 212
+    }
+  ],
+  "props": {},
+  "wind": [],
+  "water": []
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#263747">
+<title>Sinope — drie streken</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23e8b64e' d='M2 10l5-5h7l4 5-4 5H7z'/%3E%3C/svg%3E">
+</head>
+<body>
+<main>
+ <header class="masthead"><a class="wordmark" href="../">SINOPE <small>onder scheve daken</small></a><span class="edition">DRIE STREKEN</span><button id="sound" aria-label="Geluid uitschakelen" aria-pressed="true" title="Geluid">♪</button></header>
+ <section id="gallery" aria-labelledby="gallery-title">
+  <div class="introduction"><span class="eyebrow">DIOGENES & ARGOS · SPEELPROEVEN</span><h1 id="gallery-title">Je zin krijgen.<br><em>Op jouw manier.</em></h1><p>Drie ideeën voor de ontmoetingen in Sinope. Pak een touw, neem iemand letterlijk of zet de hele kade in beweging.</p></div>
+  <div id="concepts" class="concepts"><p id="loading" role="status">Argos zoekt de losse eindjes…</p></div>
+  <p class="gallery-note">Elk idee heeft een eigen korte speelproef. Je kunt ze vrij proberen en opnieuw spelen.</p>
+ </section>
+ <section id="workshop" hidden aria-labelledby="concept-title">
+  <div class="workshop-heading"><button id="back">← Drie ideeën</button><div><span id="concept-kicker" class="eyebrow"></span><h1 id="concept-title"></h1></div><div class="play-menu"><button id="reset" aria-label="Deze proef opnieuw beginnen" title="Opnieuw">↺</button><button id="pause" aria-label="Pauzeren" title="Pauzeren (Esc)">Ⅱ</button></div></div>
+  <p id="concept-pitch" class="concept-pitch"></p>
+  <div id="playfield" tabindex="0" role="application" aria-label="Speelproef met Diogenes en Argos">
+   <canvas id="scene" width="640" height="360" aria-label="Interactieve speelwereld"></canvas>
+   <section id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-copy">
+    <div class="invitation"><span id="overlay-kicker" class="eyebrow"></span><h2 id="overlay-title"></h2><p id="overlay-copy"></p><div class="overlay-buttons"><button id="begin" class="primary"></button><button id="compare" hidden>Een ander idee proberen</button></div></div>
+   </section>
+  </div>
+  <div class="deck"><div class="status" role="status" aria-live="polite"><strong id="status-title"></strong><p id="status-detail"></p></div><div id="actions" class="actions" aria-label="Handelingen"></div></div>
+  <p id="instruction" class="instruction"></p>
+ </section>
+ <footer><a href="../">← Terug naar het hoofdstuk</a><span>Een streek is pas goed als Argos mee kan.</span></footer>
+ <p id="error" role="alert" hidden></p>
+</main>
+<script type="module" src="./lab.js"></script>
+</body>
+</html>

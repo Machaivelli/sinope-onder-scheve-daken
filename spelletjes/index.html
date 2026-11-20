@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#263747">
+  <link rel="icon" href="data:,">
+  <title>Sinope · Overal valt iets te spelen</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./shore.css">
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <a id="brand" href="../" aria-label="Terug naar Sinope"><span class="fish" aria-hidden="true">◈</span><span><b>SINOPE</b><small>overal valt iets te spelen</small></span></a>
+    <div class="utility"><button id="sound" type="button" aria-pressed="true">♪ Geluid aan</button><button id="back" type="button" hidden>Alle spelletjes</button><a id="home-link" href="../">De stad in →</a></div>
+  </header>
+  <p id="loading" class="loading" role="status">De luifels gaan open…</p>
+  <section id="gallery" hidden>
+    <div class="gallery-intro"><div><p class="eyebrow">DIOGENES & ARGOS</p><h1>Een stad vol spel.</h1><p>Een kring om te verdedigen. Een mand om te redden.<br>Een regel om eens goed aan te trekken.</p></div><div class="level-picker"><label for="gallery-level">Hoe scherp staat de stad vandaag?</label><select id="gallery-level"><option value="1">1 · Eerst eens proberen</option><option value="2">2 · De buurt heeft opgelet</option><option value="3">3 · Heel Sinope kijkt mee</option></select></div></div>
+    <div id="cards" class="cards"></div>
+  </section>
+  <section id="workshop" hidden>
+    <div class="game-heading"><div><p id="game-kicker" class="eyebrow"></p><h1 id="game-title"></h1></div><div class="game-tools"><button id="back-small" class="landscape-back" type="button">Terug</button><button id="retry-top" type="button">Opnieuw</button><button id="pause" type="button">Pauze</button></div></div>
+    <div id="arena" class="arena">
+      <div id="playfield" class="playfield" tabindex="0" role="application" aria-label="Speelveld" aria-describedby="game-instruction"><canvas id="scene" width="640" height="400"></canvas></div>
+      <aside class="sideline">
+        <p class="eyebrow">HET SPEL</p><p id="game-instruction" class="instruction"></p>
+        <div class="status" aria-live="polite"><h2 id="status-title"></h2><p id="status-detail"></p></div>
+        <div id="actions" class="actions" aria-label="Spelacties"></div>
+        <p id="key-help" class="key-help">Gebruik de knoppen of de toetsen erbij. Op het speelveld kun je klikken en slepen.</p>
+      </aside>
+    </div>
+    <p id="attempt-note" class="attempt-note"></p>
+  </section>
+  <p id="error" class="error" role="alert" hidden></p>
+</main>
+<section id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-copy" hidden>
+  <div class="invitation"><p id="overlay-kicker" class="eyebrow"></p><h2 id="overlay-title"></h2><canvas id="shore-result" width="256" height="35" role="img" hidden></canvas><p id="overlay-copy"></p><p id="overlay-tip" class="overlay-tip"></p><div class="overlay-buttons"><button id="begin" class="primary" type="button">Kom, Argos.</button><button id="shore-share" type="button" hidden>Neem Bions brood en ga mee naar het feest</button><button id="return" type="button">Terug</button></div></div>
+</section>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
+

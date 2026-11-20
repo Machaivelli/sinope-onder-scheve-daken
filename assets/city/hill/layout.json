@@ -1,0 +1,94 @@
+{
+  "width": 640,
+  "height": 400,
+  "background": "background.png",
+  "layers": [
+    {
+      "id": "platform-face",
+      "file": "platform-face.png",
+      "x": 420,
+      "y": 132,
+      "depth": 174
+    },
+    {
+      "id": "walkable-roof",
+      "file": "walkable-roof.png",
+      "x": 423,
+      "y": 114,
+      "depth": 600
+    },
+    {
+      "id": "two-way-roof-stairs",
+      "file": "two-way-roof-stairs.png",
+      "x": 396,
+      "y": 146,
+      "depth": 201
+    },
+    {
+      "id": "roof-back-rail",
+      "file": "roof-back-rail.png",
+      "x": 430,
+      "y": 106,
+      "depth": 121
+    },
+    {
+      "id": "singing-wind-stone",
+      "file": "singing-wind-stone.png",
+      "x": 116,
+      "y": 127,
+      "depth": 222
+    },
+    {
+      "id": "low-sun-rock",
+      "file": "low-sun-rock.png",
+      "x": 389,
+      "y": 285,
+      "depth": 315
+    }
+  ],
+  "props": {
+    "crate": {
+      "file": "../props/crate.png",
+      "originX": 0.5,
+      "originY": 0.7391304347826086
+    },
+    "pot": {
+      "file": "../props/pot.png",
+      "originX": 0.5,
+      "originY": 0.8
+    },
+    "ball": {
+      "file": "../props/ball.png",
+      "originX": 0.5,
+      "originY": 0.6666666666666666
+    }
+  },
+  "wind": [
+    {
+      "x": 483,
+      "y": 86,
+      "kind": "cloth",
+      "color": "#4C9B95"
+    },
+    {
+      "x": 156,
+      "y": 138,
+      "kind": "flag",
+      "color": "#C96C52"
+    }
+  ],
+  "water": [
+    {
+      "x": 280,
+      "y": 54,
+      "width": 132,
+      "height": 46
+    },
+    {
+      "x": 285,
+      "y": 28,
+      "width": 117,
+      "height": 13
+    }
+  ]
+}
